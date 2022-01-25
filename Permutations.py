@@ -30,7 +30,7 @@ Function that returns all the possible permutations of a given input
 Args:
     param1: The input string which we want permutations for
 Returns:
-    Returns an array of 
+    Returns the possible permutations as a list
 """
 
 def possiblePermuations(x):

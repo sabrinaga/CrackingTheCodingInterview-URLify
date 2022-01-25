@@ -8,18 +8,19 @@ Returns:
 """
 
 def arePermutation(x, y):
-    x_sorted = sorted(x)
-    y_sorted = sorted(y)
-
-    x_string = "".join(x_sorted)
-    y_string = "".join(y_sorted)
-    
     #if the inputs are not of the same length then they can not be permutations
     if len(x) != len(y):
         return False
     #if the inputs are empty then there are no permutations
     if len(x) == 0 or len(y) == 0:
         return False
+    
+    x_sorted = sorted(x)
+    y_sorted = sorted(y)
+
+    x_string = "".join(x_sorted)
+    y_string = "".join(y_sorted)
+ 
     for i in range(0,len(x),1):
         if (x_string[i] != y_string[i]):
             return False

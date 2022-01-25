@@ -8,18 +8,18 @@ Returns:
 """
 
 def arePermutation(x, y):
+    x_sorted = sorted(x)
+    y_sorted = sorted(y)
+
+    x_string = "".join(x_sorted)
+    y_string = "".join(y_sorted)
+    
     #if the inputs are not of the same length then they can not be permutations
     if len(x) != len(y):
         return False
     #if the inputs are empty then there are no permutations
     if len(x) == 0 or len(y) == 0:
         return False
-    x_sorted = sorted(x)
-    y_sorted = sorted(y)
-
-    x_string = "".join(x_sorted)
-    y_string = "".join(y_sorted)
-
     for i in range(0,len(x),1):
         if (x_string[i] != y_string[i]):
             return False
@@ -35,8 +35,10 @@ Returns:
 
 def possiblePermuations(x):
     permutation_list = []
+    #if the length is 0 there is nothign to rearange return an empty list
     if len(x) == 0:
         return []
+    #if the length is 1 then there is nothing to rearange, return the list with original input 
     if len(x) == 1:
         return [x]
     for i in range(len(x)):

@@ -1,5 +1,5 @@
 """
-Function which rotates a NxN matrix by 90 degrees.
+Function which rotates a NxN matrix (image) by 90 degrees.
 Args:
     param1: the matrix to be rotated
 Return:

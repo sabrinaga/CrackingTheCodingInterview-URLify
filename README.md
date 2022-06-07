@@ -1,3 +1,3 @@
 # MiniProjects
 
-This is a compilation of small python projects, used to practice python programming basics and fundamentals. 
+This is a compilation of small projects, used to practice programming basics and fundamentals. 
